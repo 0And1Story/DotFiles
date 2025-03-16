@@ -1,0 +1,1 @@
+set synctex-editor-command "nvim -v --not-a-term -T dumb -c \"VimtexInverseSearch %{line}:%{column} '%{input}'\""

@@ -1,0 +1,54 @@
+# feh
+feh
+
+# fish
+fish/functions
+fish/config.fish
+
+# hypr
+hypr
+
+# hyprland
+# hypr/hyprland.conf
+
+# hyprpaper
+# hypr/hyprpaper.conf
+
+# hyprlock
+# hypr/hyprlock.conf
+# hypr/Fonts
+# hypr/Scripts
+# hypr/avatar.jpg
+# hypr/hyprlock.jpg
+# hypr/hyprlock.png
+
+# kitty
+kitty
+
+# mpd
+mpd/mpd.conf
+
+# ncmpcpp
+ncmpcpp/config
+
+# neovim
+nvim
+
+# rofi
+rofi/launchers/type-1
+rofi/wifi-menu
+
+# swaync
+swaync
+
+# waybar
+waybar
+
+# yazi
+yazi
+
+# zathura
+zathura
+
+# chrome
+chrome-flags.conf

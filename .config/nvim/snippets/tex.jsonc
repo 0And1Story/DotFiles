@@ -1,0 +1,130 @@
+{
+    "My Template": {
+        "prefix": ["mytemplate", "\\mytemplate"],
+        "body": [
+            "%! TEX program = xelatex",
+            "\\documentclass{article}",
+            "\\usepackage[scheme=plain]{ctex}",
+            "\\usepackage{amsmath}",
+            "\\usepackage{amssymb}",
+            "\\usepackage{amsthm}",
+            "\\usepackage{siunitx}",
+            "\\usepackage{color}",
+            "\\usepackage[dvipsnames, svgnames, x11names]{xcolor}",
+            "\\usepackage{tcolorbox}",
+            "\\usepackage{multicol}",
+            "\\usepackage{multirow}",
+            "\\usepackage{bigstrut}",
+            "\\usepackage{graphicx}",
+            "\\usepackage{tikz}",
+            "\\usepackage[version=4]{mhchem}",
+            "\\usepackage{caption}",
+            "\\usepackage{subcaption}",
+            "\\usepackage{enumerate}",
+            "% \\usepackage{enumitem}",
+            "\\usepackage{wrapfig}",
+            "\\usepackage{float}",
+            "\\usepackage{fbox}",
+            "\\usepackage[normalem]{ulem}",
+            "\\usepackage{bm}",
+            "\\usepackage{bold-extra}",
+            "\\usepackage{fontspec}",
+            "\\usepackage[colorlinks=true, linkcolor=black, anchorcolor=black, citecolor=black, urlcolor=black]{hyperref}",
+            "\\usepackage[export]{adjustbox}",
+            "\\usepackage{pgfplots}",
+            "\\pgfplotsset{compat=1.18}",
+            "% \\usepackage[in]{fullpage}",
+            "% \\usepackage{apacite}",
+            "% \\usepackage[margin=3cm]{geometry}",
+            "",
+            "\\renewcommand{\\d}{\\mathrm{d}}",
+            "\\newcommand{\\dr}[1]{\\frac{\\d}{\\d{#1}}}",
+            "\\newcommand{\\drn}[2]{\\frac{\\d^{#1}}{\\d{#2}^{#1}}}",
+            "\\newcommand{\\drx}[3]{\\frac{\\d^{#1}{#2}}{\\d{#3}^{#1}}}",
+            "\\newcommand{\\half}{\\frac{1}{2}}",
+            "\\newcommand{\\dw}[1]{~\\mathrm{#1}}",
+            "\\newcommand{\\p}[1]{\\times 10^{#1}}",
+            "\\newcommand{\\ds}{\\displaystyle}",
+            "\\newcommand{\\bs}{\\boldsymbol}",
+            "",
+            "\\newcommand{\\secred}[1]{\\section{\\textcolor{red}{#1}}}",
+            "\\newcommand{\\secblue}[1]{\\section{\\textcolor{blue}{#1}}}",
+            "\\newcommand{\\sol}{\\textbf{Solution:}}",
+            "",
+            "\\title{$1}",
+            "\\author{${2:陈春昊}}",
+            "\\date{2024年$3月$4日}",
+            "",
+            "\\begin{document}",
+            "",
+            "\\maketitle",
+            "",
+            "$0",
+            "",
+            "\\end{document}"
+        ],
+        "description": "My template"
+    },
+    "Figure": {
+        "prefix": ["fig", "\\fig", "graph", "\\graph"],
+        "body": [
+            "\\begin{figure}[h]",
+            "    \\centering",
+            "    \\includegraphics[width=0.7\\linewidth]{$1}",
+            "    \\caption{$2}",
+            "    \\label{fig:$1}",
+            "\\end{figure}"
+        ],
+        "description": "Include Graphics as Figure"
+    },
+    "Subfigure": {
+        "prefix": ["subfig", "\\subfig"],
+        "body": [
+            "\\begin{subfigure}{\\linewidth}",
+            "    \\centering",
+            "    \\includegraphics[width=0.7\\linewidth]{$1}",
+            "    \\subcaption{$2}",
+            "\\end{subfigure}"
+        ]
+    },
+    "Wrapfigure": {
+        "prefix": ["wrapfig", "\\wrapfig"],
+        "body": [
+            "\\begin{wrapfigure}{r}{15em}",
+            "    \\centering",
+            "    $0",
+            "    \\caption{$2}",
+            "    \\label{fig:$1}",
+            "\\end{wrapfigure}"
+        ]
+    },
+    "Table": {
+        "prefix": ["tb", "\\tb"],
+        "body": [
+            "\\begin{table}[h]",
+            "    \\centering",
+            "    \\begin{tabular}{$1}",
+            "        $0",
+            "    \\end{tabular}",
+            "    \\caption{$2}",
+            "    \\label{tab:$2}",
+            "\\end{table}"
+        ],
+        "description": "Insert Tabular as Table"
+    },
+    "Retrieved From": {
+        "prefix": ["retrievedfrom", "\\retrievedfrom"],
+        "body": "\\AtBeginDocument{\\renewcommand{\\BRetrievedFrom}{}}",
+        "description": "Remove `Retrieved From:`"
+    },
+    "SI Inter Unit Product": {
+        "prefix": ["sidot", "\\sidot"],
+        "body": "\\sisetup{inter-unit-product=\\cdot}",
+        "description": "Change the inter unit product symbol of SI."
+    },
+    "SI Scientific Exponent": {
+        "prefix": ["sisci", "\\sisci"],
+        "body": "\\sisetup{exponent-mode=scientific}",
+        "description": "Change the exponent mode of SI to scientific."
+    }
+}

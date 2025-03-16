@@ -1,0 +1,18 @@
+[opener]
+pdf_viewer = [
+  { run = 'zathura "$@"', orphan = true, desc = "Zathura", for = "unix" },
+  { run = 'okular "$@"', orphan = true, desc = "Okular", for = "unix" }
+]
+terminal = [
+  { run = 'kitty -d "$@"', orphan = true, desc = "Kitty", for = "unix" }
+]
+file_manager = [
+  { run = 'nautilus "$@"', orphan = true, desc = "Nautilus", for = "unix" },
+  { run = 'kitty yazi "$@"', orphan = true, desc = "Yazi", for = "unix" }
+]
+
+[open]
+prepend_rules = [
+  { mime = "application/pdf", use = ["open", "pdf_viewer"] },
+  { mime = "inode/directory", use = ["edit", "open", "terminal", "file_manager"] }
+]
