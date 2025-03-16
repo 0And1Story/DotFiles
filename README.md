@@ -2,6 +2,8 @@
 
 > The dot files of my Arch Linux with Hyprland.
 
+![Screenshot Overview](./doc/screenshots/overview.png "Overview")
+
 ## Softwares
 
 - **Window Manager**: Hyprland (Wayland)
