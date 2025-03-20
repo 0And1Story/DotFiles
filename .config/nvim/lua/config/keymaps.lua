@@ -19,12 +19,24 @@ map("i", "<C-z>", "<Esc>ui")
 map("n", "<C-a>", "ggVG")
 
 -- VSCode like Alt-Shift-Up/Down bindings
-map("n", "<A-S-Down>", "yyp")
-map("n", "<A-S-Up>", "yyP")
-map("i", "<A-S-Down>", "<Esc>yypi")
-map("i", "<A-S-Up>", "<Esc>yyPi")
-map("v", "<A-S-Down>", "y`]p")
-map("v", "<A-S-Up>", "y`[P")
+-- map("n", "<A-S-j>", "yyp")
+-- map("n", "<A-S-k>", "yyP")
+-- map("i", "<A-S-j>", "<Esc>yypi")
+-- map("i", "<A-S-k>", "<Esc>yyPi")
+-- map("v", "<A-S-j>", "y`]p")
+-- map("v", "<A-S-k>", "y`[P")
+
+map("n", "<A-S-j>", "<cmd>t.<cr>")
+map("n", "<A-S-k>", "<cmd>t-1<cr>")
+map("i", "<A-S-j>", "<Esc><cmd>t.<cr>i")
+map("i", "<A-S-k>", "<Esc><cmd>t-1<cr>i")
+map("v", "<A-S-j>", "<Esc><cmd>'<,'>t'><cr>'<V'>")
+map("v", "<A-S-k>", "<Esc><cmd>'<,'>t'<-1<cr>'<V'>")
+
+vim.keymap.set({ "n", "i", "v" }, "<A-S-Down>", "<A-S-j>", { noremap = false, silent = true, remap = true })
+vim.keymap.set({ "n", "i", "v" }, "<A-S-Up>", "<A-S-k>", { noremap = false, silent = true, remap = true })
+vim.keymap.set({ "n", "i", "v" }, "<A-Down>", "<A-j>", { noremap = false, silent = true, remap = true })
+vim.keymap.set({ "n", "i", "v" }, "<A-Up>", "<A-k>", { noremap = false, silent = true, remap = true })
 
 -- VSCode like Ctrl-D / Ctrl-L bindings
 map("n", "<C-d>", "viw")

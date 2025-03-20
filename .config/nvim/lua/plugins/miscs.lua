@@ -12,4 +12,10 @@ return {
       -- vim.g.VM_maps["Find Subword Under"] = "<C-d>"
     end,
   },
+  {
+    "petertriho/nvim-scrollbar",
+    config = function()
+      require("scrollbar").setup()
+    end,
+  },
 }

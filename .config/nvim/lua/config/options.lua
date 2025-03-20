@@ -5,7 +5,7 @@
 local opt = vim.opt
 
 opt.wrap = false
-opt.tabstop = 4
+opt.tabstop = 2
 opt.relativenumber = false
 
 opt.fileencodings = "ucs-bom,utf-8,gbk,big5,gb18030,utf-16,latin1"

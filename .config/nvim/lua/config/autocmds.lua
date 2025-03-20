@@ -54,3 +54,14 @@ vim.api.nvim_create_autocmd("FileType", {
     map(0, "n", "<localleader>p", "<cmd>MarkdownPreviewToggle<cr>", { noremap = true, silent = true })
   end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "cpp", "c" },
+  callback = function()
+    local opt = vim.opt
+    local map = vim.api.nvim_buf_set_keymap
+
+    opt.tabstop = 4
+    opt.shiftwidth = 4
+  end,
+})

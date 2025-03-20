@@ -16,6 +16,7 @@ abbr -a linuxqq linuxqq --ozone-platform-hint=auto --enable-wayland-ime
 # abbr -a code code --enable-features=UseOzonePlatform --ozone-platform=wayland 
 alias yay=paru
 alias vim=nvim
+alias mancn="man -M /usr/share/man/zh_CN"
 
 abbr -a windowinfo "sleep 1s && hyprctl activewindow"
 

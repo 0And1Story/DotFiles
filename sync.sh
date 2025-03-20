@@ -11,8 +11,9 @@ cat sync.include |
 
     if [ $file ]; then # if the line is not empty
       echo -e "copying: $file"
-      mkdir -p "$(dirname "$DST/$file")"
-      cp "$SRC/$file" "$DST/$file" --recursive --update
+      dirpath="$(dirname "$DST/$file")"
+      mkdir -p "$dirpath"
+      cp "$SRC/$file" "$dirpath" --recursive --update
     fi
   done
 
