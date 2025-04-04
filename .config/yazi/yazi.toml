@@ -7,13 +7,30 @@ pdf_viewer = [
 terminal = [
   { run = 'kitty -d "$@"', orphan = true, desc = "Kitty", for = "unix" }
 ]
+terminal_dir = [
+  { run = 'kitty -d .', orphan = true, desc = "Kitty", for = "unix" }
+]
+shell = [
+  { run = 'kitty "sh \"$@\""', orphan = true, desc = "Shell", for = "unix" }
+]
 file_manager = [
   { run = 'nautilus "$@"', orphan = true, desc = "Nautilus", for = "unix" },
   { run = 'kitty yazi "$@"', orphan = true, desc = "Yazi", for = "unix" }
+]
+chrome = [
+  { run = 'google-chrome-stable "$@"', orphan = true, desc = "Chrome", for = "unix" }
 ]
 
 [open]
 prepend_rules = [
   { mime = "application/pdf", use = ["open", "pdf_viewer"] },
-  { mime = "inode/directory", use = ["edit", "open", "terminal", "file_manager"] }
+  { mime = "inode/directory", use = ["edit", "open", "terminal", "file_manager"] },
+  { mime = "text/shellscript", use = ["terminal_dir", "shell", "edit", "open"] },
+  { mime = "text/html", use = ["open", "edit"] },
+  { name = "*.tex", use = ["edit", "open"] }
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.tex", run = "code" }
 ]

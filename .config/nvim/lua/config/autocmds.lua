@@ -40,6 +40,12 @@ vim.api.nvim_create_autocmd("FileType", {
     map(0, "v", "gp", 'c{<C-r>"}<Esc>`<', { noremap = false, silent = true })
     -- Boxed
     map(0, "v", "gb", 'c\\boxed{<C-r>"}<Esc>', { noremap = false, silent = true })
+    -- Text
+    map(0, "v", "gt", 'c\\text{<C-r>"}<Esc>', { noremap = false, silent = true })
+    -- Verb
+    map(0, "v", "gv", 'c\\verb|<C-r>"|<Esc>', { noremap = false, silent = true })
+    -- Inline Math
+    map(0, "v", "g$", 'c$<C-r>"$<Esc>', { noremap = false, silent = true })
   end,
 })
 

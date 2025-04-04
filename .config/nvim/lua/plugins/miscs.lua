@@ -18,4 +18,7 @@ return {
       require("scrollbar").setup()
     end,
   },
+  {
+    "powerman/vim-plugin-AnsiEsc",
+  },
 }

@@ -63,3 +63,8 @@ map("n", "<C-t>", function()
   Snacks.terminal(nil, { cwd = LazyVim.root() })
 end, { desc = "Terminal (Root Dir)" })
 map("t", "<C-t>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
+-- Close Buffer
+map("n", "<C-w>", function()
+  Snacks.bufdelete()
+end)

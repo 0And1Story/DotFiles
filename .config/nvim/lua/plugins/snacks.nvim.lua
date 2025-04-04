@@ -20,6 +20,9 @@ return {
         enabled = true,
         math = {
           enabled = false,
+          -- latex = {
+          --   font_size = "normalsize",
+          -- },
         },
       },
     },
