@@ -9,6 +9,7 @@ window#waybar {
     background: rgba(26, 27, 38, 0);
     color: #c0caf5;
     font-family: 
+        FontAwesome,
         SpaceMono Nerd Font,
         feather;
     transition: background-color .5s;
@@ -104,6 +105,7 @@ tooltip {
 #workspaces button {
   background: transparent;
   font-family:
+    FontAwesome,
     SpaceMono Nerd Font,
     feather;
   font-weight: 400;
@@ -115,8 +117,8 @@ tooltip {
 }
 
 #workspaces button.active {
-    /* background: #6262be;  */
-    color: #c0caf5;
+  /* background: #6262be;  */
+  color: #c0caf5;
 }
 
 #workspaces button:hover {
@@ -152,6 +154,18 @@ tooltip {
   background: rgba(200, 200, 200, 0.3);
   box-shadow: none;
   text-shadow: none;
+}
+
+#tray {
+  /* border-top: 2px solid #c0caf5; */
+  background: rgba(255, 255, 255, 0.1);
+  padding-left: 5px;
+  padding-right: 8px;
+  border-radius: 8px;
+}
+
+#tray > * {
+  background: transparent;
 }
 
 #pulseaudio-slider slider {

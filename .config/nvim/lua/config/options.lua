@@ -14,3 +14,10 @@ opt.fileencodings = "ucs-bom,utf-8,gbk,big5,gb18030,utf-16,latin1"
 --   opt.smoothscroll = false
 -- end
 -- opt.smoothscroll = false
+
+-- global 默认就设成 context
+vim.g.SuperTabDefaultCompletionType = "context"
+
+-- 给 tex 文件类型也用 context
+vim.g.SuperTabFileTypeMappings = vim.g.SuperTabFileTypeMappings or {}
+vim.g.SuperTabFileTypeMappings["tex"] = "context"

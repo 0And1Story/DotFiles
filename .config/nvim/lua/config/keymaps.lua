@@ -15,8 +15,10 @@ map("n", "J", "<C-d>", { noremap = true, silent = true })
 map("n", "K", "<C-u>", { noremap = true, silent = true })
 
 -- Home / End
-map({ "n", "v" }, "1", "0", { noremap = true, silent = true })
-map({ "n", "v" }, "0", "$", { noremap = true, silent = true })
+-- map({ "n", "v" }, "1", "0", { noremap = true, silent = true })
+-- map({ "n", "v" }, "0", "$", { noremap = true, silent = true })
+map({ "n", "v" }, "<C-,>", "^", { noremap = true, silent = true })
+map({ "n", "v" }, "<C-.>", "$", { noremap = true, silent = true })
 
 -- Windows like Ctrl-Z bindings
 map("n", "<C-z>", "u")

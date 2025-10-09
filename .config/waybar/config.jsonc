@@ -17,6 +17,7 @@
     "modules-right": [
         "cava",
         "wlr/taskbar",
+        "tray",
         // "idle_inhibitor",
         // "pulseaudio",
         // "pulseaudio/slider",
@@ -26,15 +27,14 @@
         "cpu",
         "memory",
         // "temperature",
-        "hyprland/language",
+        // "hyprland/language",
         "battery",
         // "battery#bat2",
         // "clock"
         "custom/notify"
     ],
     //Modules configuration
-
     "include": [
-		"~/.config/waybar/modules.json"
-	]
+        "~/.config/waybar/modules.json"
+    ]
 }

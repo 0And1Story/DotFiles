@@ -43,9 +43,9 @@
     },
     "network": {
         "format-wifi": "   {essid}",
-        "format-ethernet": " ",
-        "tooltip-format": "{ifname} via {ipaddr}  ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "",
+        "tooltip-format": "{ifname} via {ipaddr}  ",
+        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
 	    "on-click": "sh ~/.config/rofi/wifi-menu/rofi-wifi-menu.sh"
     },
@@ -105,6 +105,11 @@
         "tooltip-format": "{title}",
         "ignore-list": [],
         "on-click": "activate"
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10,
+        "icons": {}
     },
     "custom/notify": {
         "tooltip": false,
