@@ -62,6 +62,14 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
+  pattern = "csv",
+  callback = function()
+    local map = vim.api.nvim_buf_set_keymap
+    map(0, "n", "<localleader>p", "<cmd>CsvViewToggle<cr>", { noremap = true, silent = true })
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
   pattern = { "cpp", "c" },
   callback = function()
     local opt = vim.opt
