@@ -16,7 +16,7 @@
 }
 
 .notification-row:focus, .notification-row:hover {
-  background: @noti-bg-focus;
+  /* background: @noti-bg-focus; */
 }
 
 .notification-row .notification-background {
@@ -206,6 +206,7 @@
 
 .notification-group {
   /* Styling only for Grouped Notifications */
+  background: transparent;
 }
 
 .notification-group.low {
