@@ -7,6 +7,7 @@ function fish_greeting
 end
 
 abbr -a fishrc nvim ~/.config/fish/config.fish
+abbr -a kittyrc nvim ~/.config/kitty/kitty.conf
 abbr -a hyprrc nvim ~/.config/hypr/hyprland.conf
 
 # abbr -a google-chrome google-chrome-stable --disable-gpu-compositing

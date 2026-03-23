@@ -25,6 +25,7 @@ chrome = [
 prepend_rules = [
   { mime = "application/pdf", use = ["open", "pdf_viewer"] },
   { mime = "inode/directory", use = ["edit", "open", "terminal", "file_manager"] },
+  { mime = "folder/local", use = ["edit", "open", "terminal", "file_manager"] },
   { mime = "text/shellscript", use = ["terminal_dir", "shell", "edit", "open"] },
   { mime = "text/html", use = ["open", "edit"] },
   { name = "*.tex", use = ["edit", "open"] }

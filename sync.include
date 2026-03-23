@@ -25,6 +25,9 @@ hypr
 # kitty
 kitty
 
+# fonts
+fontconfig
+
 # mpd
 mpd/mpd.conf
 
