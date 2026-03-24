@@ -409,6 +409,14 @@
   font-size: 1.1rem;
 }
 
+.widget-mpris .widget-mpris-player {
+  padding: 0;
+}
+
+.widget-mpris .widget-mpris-player > box {
+  background: none;
+}
+
 .widget-mpris .widget-mpris-player > box > button {
   /* Change player control buttons */
   color: white;
