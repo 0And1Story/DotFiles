@@ -1,6 +1,6 @@
 * {
     /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
-    font-family: FontAwesome, "Fira Sans Semibold", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Fira Sans Semibold", "Noto Sans CJK SC Black", "Font Awesome 7 Free", Roboto, Helvetica, Arial, sans-serif;
     font-size: 15px;
     transition: background-color .3s ease-out;
 }
