@@ -43,9 +43,9 @@
     },
     "network": {
         "format-wifi": "   {essid}",
-        "format-ethernet": "",
-        "tooltip-format": "{ifname} via {ipaddr}  ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-ethernet": "",
+        "tooltip-format": "{ifname} via {ipaddr}  ",
+        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
 	    "on-click": "sh ~/.config/rofi/wifi-menu/rofi-wifi-menu.sh"
     },
@@ -76,7 +76,7 @@
         },
         "format": "{icon}  {capacity}%",
         "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
