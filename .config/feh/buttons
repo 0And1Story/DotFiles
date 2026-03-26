@@ -13,8 +13,9 @@
 # zoom 3
 
 # make scroll wheel (mousewheel up and down) zoom, instead of flipping images
-zoom_in 4
-zoom_out 5
+zoom_in C-4
+zoom_out C-5
 
-next_img
+prev_img 4
+next_img 5
 
