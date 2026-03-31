@@ -28,10 +28,10 @@ prepend_rules = [
   { mime = "folder/local", use = ["edit", "open", "terminal", "file_manager"] },
   { mime = "text/shellscript", use = ["terminal_dir", "shell", "edit", "open"] },
   { mime = "text/html", use = ["open", "edit"] },
-  { name = "*.tex", use = ["edit", "open"] }
+  { url = "*.tex", use = ["edit", "open"] }
 ]
 
 [plugin]
 prepend_previewers = [
-  { name = "*.tex", run = "code" }
+  { url = "*.tex", run = "code" }
 ]
