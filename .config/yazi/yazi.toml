@@ -20,10 +20,13 @@ file_manager = [
 chrome = [
   { run = 'google-chrome-stable "$@"', orphan = true, desc = "Chrome", for = "unix" }
 ]
+show_in_file_manager = [
+  { run = 'nautilus --select "$@"', orphan = true, desc = "Show in Nautilus", for = "unix" }
+]
 
 [open]
 prepend_rules = [
-  { mime = "application/pdf", use = ["open", "pdf_viewer"] },
+  { mime = "application/pdf", use = ["open", "pdf_viewer", "show_in_file_manager"] },
   { mime = "inode/directory", use = ["edit", "open", "terminal", "file_manager"] },
   { mime = "folder/local", use = ["edit", "open", "file_manager", "terminal"] },
   { mime = "text/shellscript", use = ["terminal_dir", "shell", "edit", "open"] },

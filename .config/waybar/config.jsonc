@@ -15,7 +15,7 @@
         "clock"
     ],
     "modules-right": [
-        "cava",
+        // "cava",
         "wlr/taskbar",
         "tray",
         // "idle_inhibitor",

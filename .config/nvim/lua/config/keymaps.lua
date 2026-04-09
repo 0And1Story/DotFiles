@@ -52,6 +52,10 @@ map("n", "<C-d>", "viw")
 map("v", "<C-d>", "iw")
 map("i", "<C-d>", "<Esc>lviw")
 
+-- Disable copying on delete
+map("n", "d", '"_d')
+map("v", "d", '"_d')
+
 -- map("n", "<C-l>", "<S-v>")
 -- map("v", "<C-l>", "j")
 -- map("i", "<C-l>", "<Esc><S-v>")
